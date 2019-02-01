@@ -6,3 +6,11 @@
     - user
   roles:
     - user
+
+- hosts: nodes
+  remote_user: vagrant
+  become: yes
+  tags:
+    - file
+  roles:
+    - files
